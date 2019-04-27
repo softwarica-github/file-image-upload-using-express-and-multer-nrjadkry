@@ -1,0 +1,61 @@
+
+
+<% include partials/header %>
+<body>
+
+<form  class="form-horizontal" id="regisform"  method= "POST" action="/admin/registration" enctype="multipart/form-data" style="border:1px solid #ccc">
+<div class="container"
+<fieldset>
+
+
+<legend>Registration Form</legend>
+
+
+<div class="form-group">
+ 
+  <div class="col-md-4">
+  <input id="username" name="username" type="text"  class="form-control input-md" placeholder="Username">
+  
+</div>
+
+
+<div class="form-group">
+  
+  <div class="col-md-4">
+  <input id="address" name="address" type="text"  class="form-control input-md" placeholder="Address">
+ 
+</div>
+
+<div class="form-group">
+ 
+  <div class="col-md-4">
+    <input id="password" name="password" type="password"  class="form-control input-md" placeholder="Password">
+    
+</div>
+
+<div class="form-group">
+   
+  <div class="col-md-4">
+    <input type="file" id="userphoto" name="userphoto" class="form-control input-md" multiple>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="form-group">
+  
+  <div class="col-md-4">
+    <button id="submit" name="submit"  class="btn btn-info">Submit</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+
+
+</body>
+<% include partials/footer %>
